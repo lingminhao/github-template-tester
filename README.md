@@ -43,9 +43,9 @@ Navigate to the **"Issues"** tab and click **"New Issue"**. GitHub will automati
     Use the following URL structure to open a PR with your specific template pre-loaded:
     `https://github.com/lingminhao/github-template-tester/compare/main...<main-repository-name>_<pr-id>?template=<main-repository-name>-pr-template.md`
 
-5.  **Remove the branch after testing**
+5.  **Remove the branch after testing (if the PR is no longer needed)**.
     Perform the following bash command:
     ```bash
-    git push origin --delete <main-repository-name>_<pr-id>
-    git branch -D <main-repository-name>_<pr-id>
+    git push origin --delete <main-repository-name>_<pr-id> # remove remote branch
+    git branch -D <main-repository-name>_<pr-id> # remove local branch 
     ```
