@@ -40,15 +40,16 @@ body:
     attributes:
       label: Reproduction Steps (Code & Data)
       description: |
-        Provide a **self-contained** code snippet and details about your input data (platform, reference version, approx. size).
+        Provide a **self-contained** code snippet and details about your input data.
       render: r
       placeholder: |
         # Example code:
         library(bambu)
         ...
         # Input details:
-        - ONT/PacBio:
-        - Reference:
+        - Reads (e.g. ONT/PacBio, Bulk/Single-cell, Protocol):
+        - Reference Genome (name & version):
+        - Reference Annotation (name & version):
     validations:
       required: true
 
