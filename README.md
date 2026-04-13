@@ -8,6 +8,7 @@ Templates are organized within the `.github/` directory:
 
 - **`.github/ISSUE_TEMPLATE/`**: Contains issue templates. These can be in Markdown (`.md`) or YAML (`.yml`) format for [Issue Forms](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms).
   - Format: `<main-repository-name>-<category>.yml` (e.g., `bambu-bug-report.yml`)
+  - Remark: The name field in the .yml file should be different for issue templates for different repository,
 - **`.github/PULL_REQUEST_TEMPLATE/`**: Contains PR templates. Note that GitHub **only supports Markdown (`.md`)** for PR templates; YAML forms are not yet supported for pull requests.
   - Format: `<main-repository-name>-pr-template.md` (e.g., `bambu-pr-template.md`)
 

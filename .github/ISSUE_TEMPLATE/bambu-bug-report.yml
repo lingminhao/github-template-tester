@@ -1,4 +1,4 @@
-name: "Bug report"
+name: "Bambu Bug report"
 description: "Report a problem with bambu (include a minimal reproducible example and session info)."
 title: "[Bug]: "
 labels: ["bug"]
