@@ -9,6 +9,21 @@ body:
         Have an idea for a new feature or improvement? We'd love to hear it!
         Please check if a similar request already exists before opening a new one.
 
+  - type: dropdown
+    id: feature_area
+    attributes:
+      label: Feature Area
+      description: Which part of bambu would this feature affect?
+      options:
+        - "Transcript discovery / Annotation"
+        - "Quantification"
+        - "Output / Plotting / Visualization"
+        - "Performance / Memory optimization"
+        - "New functionality / algorithm"
+        - "Other"
+    validations:
+      required: true
+
   - type: textarea
     id: goal
     attributes:
@@ -23,21 +38,21 @@ body:
   - type: textarea
     id: proposal
     attributes:
-      label: The Proposal & Example Usage
+      label: The Proposal & Example Usage (Optional)
       description: |
         Describe the feature you'd like to see. 
-        **Please include a code example or pseudo-code** showing how you imagine the new functionality would work.
+        If possible, include a code example or pseudo-code showing how you imagine it working.
       render: r
       placeholder: |
         # Example of how I'd like to use it:
         bambu(reads, annotations, new_param = TRUE)
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternatives Considered
+      label: Alternatives Considered (Optional)
       description: Have you tried any other ways to achieve this? Any existing workarounds?
       placeholder: "I tried using package Z, but it doesn't handle X well..."
     validations:
