@@ -42,3 +42,5 @@ Navigate to the **"Issues"** tab and click **"New Issue"**. GitHub will automati
 4.  **Generate the PR Link**.
     Use the following URL structure to open a PR with your specific template pre-loaded:
     `https://github.com/lingminhao/github-template-tester/compare/main...<main-repository-name>_<pr-id>?template=<main-repository-name>-pr-template.md`
+
+5. 
