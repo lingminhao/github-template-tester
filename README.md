@@ -26,8 +26,8 @@ GitHub does not automatically show a selection menu for PR templates. To use a s
 **Direct Test Links:**
 (Replace `YOUR_USERNAME` and `YOUR_REPO` in the URL after pushing)
 
-- [Create Bambu PR](https://github.com/YOUR_USERNAME/YOUR_REPO/compare/main...your-feature-branch?template=bambu-pr-template.md)
-- [Create IsoQuant PR](https://github.com/YOUR_USERNAME/YOUR_REPO/compare/main...your-feature-branch?template=isoquant-pr-template.md)
+- [Create Bambu PR](https://github.com/lingminhao/github-template-tester/compare/main...your-feature-branch?template=bambu-pr-template.md)
+- [Create IsoQuant PR](https://github.com/lingminhao/github-template-tester/compare/main...your-feature-branch?template=isoquant-pr-template.md)
 
 ### Step-by-Step for PR Testing:
 1.  **Create a Branch:** `git checkout -b testing-[your-id]`
