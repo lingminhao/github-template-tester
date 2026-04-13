@@ -13,15 +13,15 @@ body:
     id: bug_area
     attributes:
       label: Affected Area
-      description: What part of bambu is having issues?
+      description: Which part of bambu is having issues?
       options:
-        - "Installation / loading"
-        - "Transcript discovery"
-        - "Quantification"
-        - "Annotation / reference handling"
-        - "Output / plotting"
-        - "Performance / memory"
-        - "Other / not sure"
+        - "Installation / Loading"
+        - "Transcript Discovery"
+        - "Transcript Quantification"
+        - "Annotation"
+        - "Bambu Output / Plotting"
+        - "Performance (CPU, Memory, Storage)"
+        - "Others"
     validations:
       required: true
 
