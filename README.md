@@ -15,26 +15,21 @@ Templates are organized within the `.github/` directory:
   - `bambu-pr-template.md`
   - `isoquant-pr-template.md`
 
-## How to Test
+## How to Test As An User
 
-### 1. Issues 
+### 1. Issue Template
 Go to the **"Issues"** tab and click **"New Issue"**. GitHub automatically displays the list of templates for you to choose from.
 
-### 2. Pull Request
-GitHub does not automatically show a selection menu for PR templates. To use a specific template, you must specify it in the URL via the `?template=` parameter.
+### 2. Pull Request (PR) Template
+### Step-by-Step for testing pull request templates:
+*1. Replace [your-mainrepo-pr-id] with your pull request id from the main repository*
+2. Create a Branch: git checkout -b [your-mainrepo-pr-id]
+3. Push: git push origin testing-[your-mainrepo-pr-id]
+4. Open PR: Click the link below to test for the PR template.
 
 **Direct Test Links:**
-(Replace `YOUR_USERNAME` and `YOUR_REPO` in the URL after pushing)
+- [Create Bambu PR](https://github.com/lingminhao/github-template-tester/compare/main...[your-mainrepo-pr-id]?template=bambu-pr-template.md)
+- [Create IsoQuant PR](https://github.com/lingminhao/github-template-tester/compare/main...[your-mainrepo-pr-id]?template=isoquant-pr-template.md)
 
-- [Create Bambu PR](https://github.com/lingminhao/github-template-tester/compare/main...PR223?template=bambu-pr-template.md)
-- [Create IsoQuant PR](https://github.com/lingminhao/github-template-tester/compare/main...PR223?template=isoquant-pr-template.md)
-
-### Step-by-Step for PR Testing:
-1.  **Create a Branch:** `git checkout -b PR223`
-2.  **Make a Change:** Add a dummy file or edit the README.
-3.  **Push:** `git push origin PR223`
-4.  **Open PR:** Use the links above, ensuring the branch name matches the one you pushed.
-
-**Last Test Update:**
-- Test branch: `PR223`
-- Update time: 2026-04-13 14:00 (for branch diff purposes)
+## Add Github Issue and Pull Request templates for testing
+The project handler has to design a set of github issue and pull request templates before publishing them publicly to the main repository. To test that, the project handler only needs to add the issue template under the `.github/ISSUE_TEMPLATE` or `.github/PULL_REQUEST_TEMPLATE` folder in this repository. You may find some example templates there and customize accordingly for your project. 
