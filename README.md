@@ -48,6 +48,8 @@ Navigate to the **"Issues"** tab and click **"New Issue"**. GitHub will automati
     Perform the following bash command:
     ```bash
     git push origin --delete <main-repository-name>_<pr-id> # remove remote branch
+    
+    git checkout main # remove local branch
     git branch -D <main-repository-name>_<pr-id> # remove local branch 
     ```
 
