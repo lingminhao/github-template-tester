@@ -96,7 +96,7 @@ body:
       options:
         - label: "I searched existing issues to avoid duplicates."
           required: true
-        - label: "I included a minimal reproducible example."
+        - label: "I included a minimal reproducible code snippet."
           required: true
         - label: "I included session/environment information."
           required: true
