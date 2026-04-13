@@ -16,13 +16,21 @@ Templates are organized within the `.github/` directory:
   - `isoquant-pr-template.md`
 
 ## How to Test
-### Issues 
-1. Go to the "Issues" tab and click "New Issue". You should see options for different projects. Fill in the form accordingly.
 
-### Pull Request
-1. To ensure our new PR checklist works for your specific use case, follow these steps in the github-template-tester repo:
-2. Create a new Pull Request. GitHub should allow you to choose between the different PR templates (usually via the URL or by selecting them if multiple are present).
-3. Create a Branch: git checkout -b testing-[your-mainrepo-pullrequestid]
-4. Make a "Traceable" Change: Add the pull request id from your main repository here [] (e.g. PR594).
+### 1. Issues 
+Go to the **"Issues"** tab and click **"New Issue"**. GitHub automatically displays the list of templates for you to choose from.
 
-*Note: For Pull Request templates, if multiple templates exist in the directory, you can select them by adding `?template=file_name.md` to the PR creation URL, or GitHub may show a selector in some contexts.*
+### 2. Pull Request
+GitHub does not automatically show a selection menu for PR templates. To use a specific template, you must specify it in the URL via the `?template=` parameter.
+
+**Direct Test Links:**
+(Replace `YOUR_USERNAME` and `YOUR_REPO` in the URL after pushing)
+
+- [Create Bambu PR](https://github.com/YOUR_USERNAME/YOUR_REPO/compare/main...your-feature-branch?template=bambu-pr-template.md)
+- [Create IsoQuant PR](https://github.com/YOUR_USERNAME/YOUR_REPO/compare/main...your-feature-branch?template=isoquant-pr-template.md)
+
+### Step-by-Step for PR Testing:
+1.  **Create a Branch:** `git checkout -b testing-[your-id]`
+2.  **Make a Change:** Add a dummy file or edit the README.
+3.  **Push:** `git push origin testing-[your-id]`
+4.  **Open PR:** Use the links above, ensuring the branch name matches the one you pushed.
