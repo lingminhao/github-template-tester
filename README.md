@@ -1,33 +1,51 @@
 # GitHub Template Tester
 
-This repository is used to test GitHub Issue and Pull Request templates for multiple projects before publishing publicly in the main repository.
+This repository is designed to test GitHub Issue and Pull Request (PR) templates for various repositories before they are published to their respective main repositories.
 
 ## Repository Structure
 
 Templates are organized within the `.github/` directory:
 
-- `.github/ISSUE_TEMPLATE/`: Contains issue templates for different projects in format: `<main-repo-name-category>.yml`. For example,
-  - `bambu-bug-report.yml`
-  - `bambu-feature-request.yml`
-- `.github/PULL_REQUEST_TEMPLATE/`: Contains pull request templates for different projects in format: `<main-repo-name>-pr-template.md`. For example,
-  - `bambu-pr-template.md`
+- **`.github/ISSUE_TEMPLATE/`**: Contains issue templates. These can be in Markdown (`.md`) or YAML (`.yml`) format for [Issue Forms](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms).
+  - Format: `<main-repository-name>-<category>.yml` (e.g., `bambu-bug-report.yml`)
+- **`.github/PULL_REQUEST_TEMPLATE/`**: Contains PR templates. Note that GitHub **only supports Markdown (`.md`)** for PR templates; YAML forms are not yet supported for pull requests.
+  - Format: `<main-repository-name>-pr-template.md` (e.g., `bambu-pr-template.md`)
 
-## Adding Github Issue and Pull Request templates for testing
-The project handler has to design a set of github issue and pull request templates for testing before publishing them publicly to the main repository. To do this, the project handler only needs to add the issue template under the `.github/ISSUE_TEMPLATE` or `.github/PULL_REQUEST_TEMPLATE` folder in this repository following the format specified in the Structure section. You may find some example templates there and customize accordingly for your project. 
+## Adding Templates for Testing
 
-## How to Test As An User
+To test a new template, add it to the appropriate directory following the naming conventions mentioned above. You can use the existing templates as a starting point and customize them for your project.
 
-### 1. Issue Template
-Go to the **"Issues"** tab and click **"New Issue"**. GitHub automatically displays the list of templates for you to choose from.
+## How to Test
 
-### 2. Pull Request (PR) Template
-### Step-by-Step for testing pull request templates:
-1. Create a Branch: `git checkout -b <main-repo-name_pr-id>`
-2. Modify `<main-repo>` & `<pr-id>`: replace `<main-repo>` with the name of the main repository you are referring to, and `<pr-id>` with the pull request id you are working on in the main repository.
-3. Push the changes to remote: 
-   `git add .`
-   `git commit -m 'create pull request <pr-id> branch to test PR template for <main-repo-name>'`
-   `git push -u origin <main-repo-name_pr-id>`
-   You will be required to enter the necessary github credentials to complete the push.
-4. Test the pull request template with the link by replacing <main-repo-name_pr-id>
-   https://github.com/lingminhao/github-template-tester/compare/main...<main-repo-name_pr-id>?template=<main-repo-name>-pr-template.md
+### 1. Issue Templates
+Navigate to the **"Issues"** tab and click **"New Issue"**. GitHub will automatically display the list of available templates for you to choose from.
+
+### 2. Pull Request Templates
+#### Step-by-Step Instructions:
+1.  **Create a New Branch**:
+    Perform the following bash command:
+    ```bash
+    git checkout -b <main-repository-name>_<pr-id>
+    ```
+
+2.  **Modify README.MD**:
+    Replace `<main-repository-name>_<pr-id>` here with your main repository name (e.g., `bambu`) and `<pr-id>` with the pull request ID from your main repository. This ensures a change is recorded on the branch, which is required to open a pull request.
+
+3.  **Commit and Push**:
+    Perform the following bash command:
+    ```bash
+    git add .
+    git commit -m "Test PR template for <main-repository-name> (PR: <pr-id>)"
+    git push -u origin <main-repository-name>_<pr-id>
+    ```
+
+4.  **Generate the PR Link**:
+    Use the following URL structure to open a PR with your specific template pre-loaded:
+    `https://github.com/lingminhao/github-template-tester/compare/main...<main-repository-name>_<pr-id>?template=<main-repository-name>-pr-template.md`
+
+## Useful Resources
+
+- [Configuring Issue Templates (YAML/Markdown)](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates)
+- [Syntax for GitHub Issue Forms (YAML)](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms)
+- [Creating a Pull Request Template](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
+- [Using Query Parameters to Create a Pull Request](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/using-query-parameters-to-create-a-pull-request)
