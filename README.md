@@ -42,10 +42,3 @@ Navigate to the **"Issues"** tab and click **"New Issue"**. GitHub will automati
 4.  **Generate the PR Link**.
     Use the following URL structure to open a PR with your specific template pre-loaded:
     `https://github.com/lingminhao/github-template-tester/compare/main...<main-repository-name>_<pr-id>?template=<main-repository-name>-pr-template.md`
-
-## Useful Resources
-
-- [Configuring Issue Templates (YAML/Markdown)](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates)
-- [Syntax for GitHub Issue Forms (YAML)](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms)
-- [Creating a Pull Request Template](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
-- [Using Query Parameters to Create a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/using-query-parameters-to-create-a-pull-request)
