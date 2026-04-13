@@ -1,0 +1,51 @@
+name: "Feature request"
+description: "Suggest an improvement or new feature for bambu."
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / motivation
+      description: What problem are you trying to solve? Why is it important?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe what you’d like bambu to do. Include API ideas if you have them.
+      placeholder: "e.g., new argument, new function, changed default behavior, etc."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What have you tried instead? Any existing workarounds?
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / example
+      description: Provide example code, pseudo-code, or a concrete use case.
+      placeholder: |
+        ```r
+        # example usage
+        ```
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: "I searched existing issues to avoid duplicates."
+          required: true
+        - label: "I described a concrete use case and success criteria."
+          required: true
