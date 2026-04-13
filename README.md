@@ -1,6 +1,6 @@
-# GitHub Template Tester
+# GitHub Issue & Pull Request Template Tester
 
-This repository is designed to test GitHub Issue and Pull Request (PR) templates for various repositories before they are published to their respective main repositories.
+This repository is designed to test GitHub Issue and Pull Request (PR) templates for different repositories before they are published to their respective main repositories.
 
 ## Repository Structure
 
@@ -22,16 +22,16 @@ Navigate to the **"Issues"** tab and click **"New Issue"**. GitHub will automati
 
 ### 2. Pull Request Templates
 #### Step-by-Step Instructions:
-1.  **Create a New Branch**:
+1.  **Create a New Branch**.
     Perform the following bash command:
     ```bash
     git checkout -b <main-repository-name>_<pr-id>
     ```
 
-2.  **Modify README.MD**:
-    Replace `<main-repository-name>_<pr-id>` here with your main repository name (e.g., `bambu`) and `<pr-id>` with the pull request ID from your main repository. This ensures a change is recorded on the branch, which is required to open a pull request.
+2.  **Modify README.MD**.
+    Replace `<main-repository-name>_<pr-id>` here with your main repository name (e.g., `bambu`) and pull request ID from your main repository. This ensures a change is recorded on the branch, which is required to open a pull request.
 
-3.  **Commit and Push**:
+3.  **Commit and Push**.
     Perform the following bash command:
     ```bash
     git add .
@@ -39,7 +39,7 @@ Navigate to the **"Issues"** tab and click **"New Issue"**. GitHub will automati
     git push -u origin <main-repository-name>_<pr-id>
     ```
 
-4.  **Generate the PR Link**:
+4.  **Generate the PR Link**.
     Use the following URL structure to open a PR with your specific template pre-loaded:
     `https://github.com/lingminhao/github-template-tester/compare/main...<main-repository-name>_<pr-id>?template=<main-repository-name>-pr-template.md`
 
