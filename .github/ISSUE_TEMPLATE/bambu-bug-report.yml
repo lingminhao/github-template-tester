@@ -15,11 +15,11 @@ body:
       label: Affected Area
       description: Which part of bambu is having issues?
       options:
-        - "Installation / Loading"
+        - "Installation"
         - "Transcript Discovery"
         - "Transcript Quantification"
         - "Annotation"
-        - "Bambu Output / Plotting"
+        - "Bambu Output / Visualization"
         - "Performance (CPU, Memory, Storage)"
         - "Others"
     validations:

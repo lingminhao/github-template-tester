@@ -15,12 +15,12 @@ body:
       label: Feature Area
       description: Which part of bambu would this feature affect?
       options:
-        - "Transcript discovery / Annotation"
-        - "Quantification"
-        - "Output / Plotting / Visualization"
-        - "Performance / Memory optimization"
-        - "New functionality / algorithm"
-        - "Other"
+        - "Transcript Discovery"
+        - "Transcript Quantification"
+        - "Output / Visualization"
+        - "Performance / Memory Optimization"
+        - "New Functionality"
+        - "Others"
     validations:
       required: true
 
