@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thanks for reporting an issue! To help us fix it quickly, please provide as much detail as possible.
-        Please **do not include any sensitive/private data**.
+        **Do not include any sensitive/private data**.
 
   - type: dropdown
     id: bug_area
