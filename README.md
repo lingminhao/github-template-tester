@@ -6,7 +6,7 @@ This repository is used to test GitHub Issue and Pull Request templates for mult
 
 Templates are organized within the `.github/` directory:
 
-- `.github/ISSUE_TEMPLATE/`: Contains issue templates for different projects.
+- `.github/ISSUE_TEMPLATE/`: Contains issue templates for different projects. For example,
   - `bambu-bug-report.md`
   - `bambu-feature-request.md`
   - `isoquant-bug-report.md`
@@ -26,11 +26,15 @@ GitHub does not automatically show a selection menu for PR templates. To use a s
 **Direct Test Links:**
 (Replace `YOUR_USERNAME` and `YOUR_REPO` in the URL after pushing)
 
-- [Create Bambu PR](https://github.com/lingminhao/github-template-tester/compare/main...your-feature-branch?template=bambu-pr-template.md)
-- [Create IsoQuant PR](https://github.com/lingminhao/github-template-tester/compare/main...your-feature-branch?template=isoquant-pr-template.md)
+- [Create Bambu PR](https://github.com/lingminhao/github-template-tester/compare/main...PR223?template=bambu-pr-template.md)
+- [Create IsoQuant PR](https://github.com/lingminhao/github-template-tester/compare/main...PR223?template=isoquant-pr-template.md)
 
 ### Step-by-Step for PR Testing:
-1.  **Create a Branch:** `git checkout -b testing-[your-id]`
+1.  **Create a Branch:** `git checkout -b PR223`
 2.  **Make a Change:** Add a dummy file or edit the README.
-3.  **Push:** `git push origin testing-[your-id]`
+3.  **Push:** `git push origin PR223`
 4.  **Open PR:** Use the links above, ensuring the branch name matches the one you pushed.
+
+**Last Test Update:**
+- Test branch: `PR223`
+- Update time: 2026-04-13 14:00 (for branch diff purposes)
