@@ -108,3 +108,9 @@ body:
           required: true
         - label: "I included session/environment information."
           required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        *This form is for bug reports. For feature enhancements, please use the **Feature Request** template. For general questions or discussions, please visit the [**Discussions**](https://github.com/GoekeLab/bambu/discussions) tab.*
