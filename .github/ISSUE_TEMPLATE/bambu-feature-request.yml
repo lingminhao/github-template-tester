@@ -67,3 +67,9 @@ body:
           required: true
         - label: "I described a concrete use case and success criteria."
           required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        *This form is for feature enhancements. For bug reports, please use the **Bug Report** template. For general questions or discussions, please visit the [**Discussions**](https://github.com/GoekeLab/bambu/discussions) tab.*
