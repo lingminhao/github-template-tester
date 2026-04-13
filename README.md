@@ -50,3 +50,6 @@ Navigate to the **"Issues"** tab and click **"New Issue"**. GitHub will automati
     git push origin --delete <main-repository-name>_<pr-id> # remove remote branch
     git branch -D <main-repository-name>_<pr-id> # remove local branch 
     ```
+
+## Additional Resource
+For additional information on issue and pull request templates, refer to https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests
