@@ -36,27 +36,36 @@ body:
       required: true
 
   - type: textarea
-    id: repro_steps
+    id: repro_code
     attributes:
-      label: Reproduction Steps (Code & Data)
+      label: Minimal Reproducible Example (R Code)
       description: |
-        Provide a **self-contained** code snippet and details about your input data.
+        Provide the smallest possible R code snippet that reproduces the issue.
       render: r
       placeholder: |
-        # Example code:
         library(bambu)
-        ...
-        # Input details:
-        - Reads (e.g. ONT/PacBio, Bulk/Single-cell, Protocol):
+        # Your code here...
+    validations:
+      required: true
+
+  - type: textarea
+    id: input_data
+    attributes:
+      label: Input Data Details
+      description: |
+        Describe the inputs needed to reproduce (e.g., sequencing platform, reference used, approx. dataset size).
+      placeholder: |
+        - Sequencing Platform (e.g. ONT / PacBio):
         - Reference Genome (name & version):
         - Reference Annotation (name & version):
+        - Approx. dataset size / number of reads:
     validations:
       required: true
 
   - type: dropdown
-    id: frequency
+    id: reproducibility
     attributes:
-      label: Frequency
+      label: Reproducibility
       description: How often does this bug occur?
       options:
         - "Always (every time I run this)"
@@ -85,7 +94,6 @@ body:
       label: Contribution
       options:
         - label: "I can provide a small public dataset/toy example for reproduction."
-        - label: "I would be willing to open a pull request to fix this (with guidance)."
     validations:
       required: false
 
