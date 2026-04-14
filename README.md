@@ -30,7 +30,7 @@ Navigate to the **"Issues"** tab and click **"New Issue"**. GitHub will automati
     ```
 
 2.  **Modify README.MD**.
-    Replace `Bambu_<pr-id>` here with your main repository name (e.g., `bambu`) and pull request ID from your main repository. This ensures a change is recorded on the branch, which is required to open a pull request.
+    Replace `<main-repository-name>_<pr-id>` here with your main repository name (e.g., `bambu`) and pull request ID from your main repository. This ensures a change is recorded on the branch, which is required to open a pull request.
 
 3.  **Commit and Push**.
     Perform the following bash command:
