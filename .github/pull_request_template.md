@@ -19,6 +19,6 @@ Briefly describe how the changes were implemented. Which specific code segments 
 - [ ] I have performed a self-review of my own code.
 - [ ] I have commented my code, particularly in hard-to-understand areas.
 - [ ] I have made corresponding changes to the documentation (vignettes, man pages).
-- [ ] I have run the nf_bambu_pr_review pipeline on a test dataset and confirmed that the output is as expected.
+- [ ] I have run the **nf_bambu_pr_review** pipeline on a test dataset and confirmed that the output is as expected.
 
 Please attach the relevant reports from the nf_bambu_pr_review pipeline here:
